@@ -5,7 +5,8 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-
+   overview
+   tasks
 
 
 Indices and tables

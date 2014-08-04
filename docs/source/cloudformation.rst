@@ -103,29 +103,27 @@ Supported Resources
 ___________________
 The following resources are supported by CloudFormation in Eucalyptus.
 
-=====     =====
-Resource  Description
-=====     =====
-AWS::AutoScaling::AutoScalingGroup  All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier. 
-AWS::AutoScaling::LaunchConfiguration All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except AssociatePublicIpAddress.
-AWS::AutoScaling::ScalingPolicy	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::CloudFormation::WaitCondition	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::CloudFormation::WaitConditionHandle.	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::CloudWatch::Alarm	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::EC2::EIP	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except Domain.
-AWS::EC2::EIPAssociation	-- All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: AllocationId, NetworkInterfaceId, and PrivateIpAddress.
-AWS::EC2::Instance	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: NetworkInterfaces, SecurityGroupIds, SourceDestCheck, Tags, and Tenancy. All other properties are forwarded to the Compute service internally but VPC is not implemented so VPC oriented properties are likely ignored there.
-AWS::EC2::SecurityGroup	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: SecurityGroupEgress, Tags, and VpcId.
-AWS::EC2::SecurityGroupIngress	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except SourceSecurityGroupId.
-AWS::EC2::Volume	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType and Tags.
-AWS::EC2::VolumeAttachment	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::ElasticLoadBalancing::LoadBalancer	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: AccessLoggingPolicy, ConnectionDrainingPolicy, CrossZone, Policies.InstancePorts, and Policies.LoadBalanerPorts. All other properties are passed through to the LoadBalancing service internally but some features are not implemented so properties may be ignored there.
-AWS::IAM::AccessKey	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except Serial.
-AWS::IAM::Group	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::IAM::InstanceProfile	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::IAM::Policy	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::IAM::Role	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::IAM::User	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::IAM::UserToGroupAddition	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-AWS::S3::Bucket	All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.
-=====     =====
+  ..csv-table:: Suported Resources
+  :header "Resource", "Description"
+  "AWS::AutoScaling::AutoScalingGroup", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier."
+  "AWS::AutoScaling::LaunchConfiguration", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except AssociatePublicIpAddress."
+  "AWS::AutoScaling::ScalingPolicy", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::CloudFormation::WaitCondition", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::CloudFormation::WaitConditionHandle.", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::CloudWatch::Alarm", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::EC2::EIP", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except Domain."
+  "AWS::EC2::EIPAssociation", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: AllocationId, NetworkInterfaceId, and PrivateIpAddress."
+  "AWS::EC2::Instance", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: NetworkInterfaces, SecurityGroupIds, SourceDestCheck, Tags, and Tenancy. All other properties are forwarded to the Compute service internally but VPC is not implemented so VPC oriented properties are likely ignored there."
+  "AWS::EC2::SecurityGroup", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: SecurityGroupEgress, Tags, and VpcId."
+  "AWS::EC2::SecurityGroupIngress", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except SourceSecurityGroupId."
+  "AWS::EC2::Volume", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType and Tags."
+  "AWS::EC2::VolumeAttachment", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::ElasticLoadBalancing::LoadBalancer", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: AccessLoggingPolicy, ConnectionDrainingPolicy, CrossZone, Policies.InstancePorts, and Policies.LoadBalanerPorts. All other properties are passed through to the LoadBalancing service internally but some features are not implemented so properties may be ignored there."
+  "AWS::IAM::AccessKey", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except Serial."
+  "AWS::IAM::Group", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::IAM::InstanceProfile", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::IAM::Policy", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::IAM::Role", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::IAM::User", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::IAM::UserToGroupAddition", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."
+  "AWS::S3::Bucket", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."

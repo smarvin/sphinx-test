@@ -11,7 +11,7 @@ How CloudFormtion Works
 _______________________
 CloudFormation manages a set of resources, called a stack, in batch operations (create, update, or delete). Stacks are described in JSON templates, and can be simple, as the following example:
 
-..  codeblock:: xml
+..  code-block:: xml
 {
   "Resources" : {
     "MyInstance": {
@@ -27,7 +27,7 @@ This stack creates a single instance, based on the image with ID emi-db0b2276. H
 
 CloudFormation allows stack customization through user parameters that are passed in at stack creation time. The following is an example of the template above with a user parameter called MyImageId. Changes are in bold.
 
-.. codeblock:: xml
+.. code-block:: xml
 {
   "Parameters": {
     "MyImageId": {
@@ -47,14 +47,14 @@ CloudFormation allows stack customization through user parameters that are passe
 
 This stack creates a single instance, but the image ID will be required to be passed in using the command line. For example, the following example uses the euform-create-stack command in Euca2ools:
 
-.. codeblock::
+.. code-block::
 euform-create-stack --template-file template.json -p MyImageId=emi-db0b2276 MyStack
 
 This command passes the parameter MyImageId with value emi-db0b2276 into the stack creation process using the -p flag.
 
 You can also use templates to create multiple resources and associate them with each other. For example, the following template creates an instance with its own security group and ingress rule.
 
-..codeblock::
+..code-block::
 {
   "Parameters": {
     "MyImageId": {

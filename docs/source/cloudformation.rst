@@ -87,4 +87,9 @@ You can also use templates to create multiple resources and associate them with 
       }
     }
   }
-}d
+}
+
+Templates can be more complicated than the ones shown above, but CloudFormation allows many resources to be deployed in one operation. Resources from most Eucalyptus services are supported.
+
+Requirements
+____________

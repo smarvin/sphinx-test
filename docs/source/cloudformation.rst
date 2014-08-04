@@ -54,7 +54,7 @@ This command passes the parameter MyImageId with value emi-db0b2276 into the sta
 
 You can also use templates to create multiple resources and associate them with each other. For example, the following template creates an instance with its own security group and ingress rule.
 
-..codeblock:: javascript
+.. codeblock:: javascript
 {
   "Parameters": {
     "MyImageId": {

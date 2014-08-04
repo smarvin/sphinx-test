@@ -104,11 +104,13 @@ Supported Resources
 ___________________
 The following resources are supported by CloudFormation in Eucalyptus.
 
-  +-----------------------------------+--------------------------------------------------------------------------+
-  | Resource                          | Description |
-  ====================================+======================================+
-  | AWS::AutoScaling::AutoScalingGroup | All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier.|
-  | AWS::AutoScaling::LaunchConfiguration | All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except AssociatePublicIpAddress.|
+==========================================  ========================================================================
+Resource                                    Description 
+==========================================  ========================================================================
+AWS::AutoScaling::AutoScalingGroup          All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier.
+AWS::AutoScaling::LaunchConfiguration       All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except AssociatePublicIpAddress.
+
+==========================================  =========================================================================
   | AWS::AutoScaling::ScalingPolicy | All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.|
   | AWS::CloudFormation::WaitCondition | All properties in the Template Reference section of the AWS CloudFormation User Guide are supported.|
     "AWS::CloudFormation::WaitConditionHandle.", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."

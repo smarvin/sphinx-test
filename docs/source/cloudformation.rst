@@ -93,3 +93,8 @@ Templates can be more complicated than the ones shown above, but CloudFormation 
 
 Requirements
 ____________
+
+To run CloudFormation on Eucalyptus, you need the following:
+  * A running Eucalyptus cloud, version 4.0 or later, with at least one Cloud Controller, Node Controller, and Cluster Controller up, running and registered
+  * At least one active running service of each of the following: CloudWatch, AutoScaling, Load Balancing, Compute, and IAM
+  * A registered active CloudFormation service

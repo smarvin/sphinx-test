@@ -105,6 +105,7 @@ The following resources are supported by CloudFormation in Eucalyptus.
 
   ..csv-table:: Suported Resources
     :header "Resource", "Description"
+    :widths 200, 200
     "AWS::AutoScaling::AutoScalingGroup", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except: HealthCheckType, Tags, and VpcZoneIdentifier."
     "AWS::AutoScaling::LaunchConfiguration", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported except AssociatePublicIpAddress."
     "AWS::AutoScaling::ScalingPolicy", "All properties in the Template Reference section of the AWS CloudFormation User Guide are supported."

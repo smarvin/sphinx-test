@@ -9,6 +9,7 @@ Contents:
    overview_image_mgmt
    overview_image
    tasks_image
+   cloudformation
 
 
 Indices and tables

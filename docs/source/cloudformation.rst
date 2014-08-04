@@ -11,7 +11,7 @@ How CloudFormtion Works
 _______________________
 CloudFormation manages a set of resources, called a stack, in batch operations (create, update, or delete). Stacks are described in JSON templates, and can be simple, as the following example:
 
-..  code-block:: xml
+..  codeblock:: javascript
 {
   "Resources" : {
     "MyInstance": {
@@ -27,7 +27,7 @@ This stack creates a single instance, based on the image with ID emi-db0b2276. H
 
 CloudFormation allows stack customization through user parameters that are passed in at stack creation time. The following is an example of the template above with a user parameter called MyImageId. Changes are in bold.
 
-.. code-block:: xml
+.. codeblock:: javascript
 {
   "Parameters": {
     "MyImageId": {
@@ -54,7 +54,7 @@ This command passes the parameter MyImageId with value emi-db0b2276 into the sta
 
 You can also use templates to create multiple resources and associate them with each other. For example, the following template creates an instance with its own security group and ingress rule.
 
-..code-block::
+..codeblock:: javascript
 {
   "Parameters": {
     "MyImageId": {

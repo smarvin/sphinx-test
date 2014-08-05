@@ -159,7 +159,7 @@ This topic describes a use case for creating a stack, checking the stack progres
 
 For this use case, we will use the following template:
 
-  ..codeblock:: javascript
+  ..codeblock:: JSON
 {
   "Parameters": {
     "MyImageId": {
@@ -202,4 +202,9 @@ For this use case, we will use the following template:
 This template creates an instance with a security group that allows global SSH access (port 22), but uses a keypair to log in. It requires two parameters, MyImageId, which is the image ID of the instance to create, and MyKeyPair, which is the name of the keypair to use to log in with. You can use both values with the euca-run-instances command to create an instance manually (for example, euca-run-instances -k mykey emi-db0b2276) so the arguments needed here are standard instance arguments.
 
 The steps to run this template through the system are explained in the following steps.
+
+.. .. important:: 
+These steps require that you have an available image (run euca-describe-images to verify) and that the CloudFormation service is running (run euca-describe-services to verify).
+
+
 

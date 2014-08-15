@@ -203,8 +203,7 @@ This template creates an instance with a security group that allows global SSH a
 
 The steps to run this template through the system are explained in the following steps.
 
-.. important:: 
-These steps require that you have an available image (run euca-describe-images to verify) and that the CloudFormation service is running (run euca-describe-services to verify).
+.. important:: These steps require that you have an available image (run euca-describe-images to verify) and that the CloudFormation service is running (run euca-describe-services to verify).
 
 
 
